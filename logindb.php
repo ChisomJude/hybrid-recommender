@@ -34,7 +34,7 @@ if ($result) {
         header("Location: category.php");
         exit;
     } else {
-        echo "Invalid username or password.";
+        header("Location: index.php?session= Wrong Username or Password , Please try again later");
     }
 } else {
     echo "Error: " . mysqli_error($conn);

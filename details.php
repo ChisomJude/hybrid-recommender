@@ -1,25 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-<title>Book Store</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<style>
-    .success {
-        color: green;
-    }
-</style>
-</head>
-<body>
-<div id="wrap">
-
-    <?php include('header.php'); 
+<?php include('top.php'); ?>
+<?php include('header.php'); 
        
     // Define the query to fetch data
     if (isset($_GET['bid'])) {
-        $userId = 1; // Assuming the logged-in user has user_id = 1
+        $userId = $_SESSION['user_id'];  // Assuming the logged-in user has user_id = 1
         $bookId = intval($_GET['bid']); // Assuming the book_id is passed as a parameter in the URL
     
         // Define the query to fetch data

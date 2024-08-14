@@ -1,22 +1,7 @@
 <html>
 <body>
 <?php include('top.php');?>
-
-<div class="header">
-       		<div class="logo"><a href="index.php"><img src="images/logo.gif" alt="" title="" border="0" /></a></div>            
-        <div id="menu">
-            <ul>                                                                       
-            <li><a href="index.php">Home </a></li>
-            
-            <li><a href="register.php">Register</a></li>
-            <li><a href="login.php">Login</a></li>
-          
-            <li class='active' style='float:right;'>
-  
-            </ul>
-        </div>     
-            
-       </div> 
+<?php include('header.php'); ?>
        
 <div class="center_content">
   	<div class="left_content">
@@ -29,53 +14,47 @@
             
 					<div class="contact_form">
 						<div class="form_subtitle">Create new account</div>
-						<form name='registration' onSubmit="return formValidation();" action="registration.php" method="post"><table>
+						<form name='registration' action="registration.php" method="post"><table>
 							<tr>
 							<td>Username:</td>
-							<td><input type="text" name="userid" size="30" /><br></td>
+							<td><input type="text" name="userid" required size="30" /><br></td>
 							</tr>
 													
 							<tr>
 							<td>Password:</td>
-							<td><input type="password" name="passid" size="30" /><br></td>
+							<td><input type="password" name="passid" required  size="30" /><br></td>
 							</tr>
 																		
 							
 							<tr>
 							<td>Name:</td>
-							<td><input type="text" name="name" size="30"  placeholder="Jennifer"/><br></td>
+							<td><input type="text" name="name" size="30" required  placeholder="Jennifer"/><br></td>
 							</tr>
 													
 							<tr>
 							<td>Age:</td>
-							<td><input type="text" name="age" size="30" placeholder="15" /><br></td>
+							<td><input type="text" name="age" size="30"required  placeholder="15" /><br></td>
 							</tr>
 							
 							<tr>
 							<td>Email:</td>
-							<td><input type="text" name="email" size="30" placeholder="someone@email.com" /><br></td>
+							<td><input type="text" name="email" required  size="30" placeholder="someone@email.com" /><br></td>
 							</tr>
 
 							<tr>
 							<td>City</td>
-							<td><input type="text" name="city" size="30" placeholder="Awka" /><br></td>
+							<td><input type="text" name="city" required  size="30" placeholder="Awka" /><br></td>
 							</tr>
 
 							<tr>
 							<td>Country:</td>
-							<td><input type="text" name="country" size="30" Placeholder="Nigeria" /><br></td>
+							<td><input type="text" name="country" required  size="30" Placeholder="Nigeria" /><br></td>
 							</tr>
 							
 							<tr>
 							<td></td><td><input type="submit" class="register" value="Register" />
 							</td>
 							</tr>
-
-							<tr></tr>    
-
-                            <tr><td></td><td><a href="index.php">Already have an account? Login</a></td></tr> 
-							
-							
 						</table>
 						</form>
 					</div>
