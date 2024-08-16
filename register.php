@@ -1,8 +1,29 @@
-<html>
-<body>
+
 <?php include('top.php');?>
-<?php include('header.php'); ?>
-       
+
+<?php
+
+//session_start(); // Right at the top of your script
+//$session_name = session_name("WebsiteID");
+//echo session_name();
+?> 
+
+       <div class="header">
+       		<div class="logo"><a href="index.php"><img src="images/logo.gif" alt="" title="" border="0" /></a></div>            
+        <div id="menu">
+            <ul>                                                                       
+            <li><a href="index.php">Home </a></li>
+            
+            <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+          
+            <li class='active' style='float:right;'>
+  
+            </ul>
+        </div>     
+            
+       </div> 
+	  	  
 <div class="center_content">
   	<div class="left_content">
         <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>Register</div>
