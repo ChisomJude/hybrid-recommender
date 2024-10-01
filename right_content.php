@@ -4,7 +4,7 @@
 
              <div class="right_box">
              
-             	<div class="title" align="right"><span class="title_icon"><img src="images/bullet4.gif" alt="" title=""/></span>Promotions</div> 
+             	<div class="title" align="right"><span class="title_icon"><img src="images/bullet4.gif" alt="" title=""/></span>Recommendations</div> 
                     
                 <div class="new_prod_box">
                         <a href="details.html">How to Work Online</a>
